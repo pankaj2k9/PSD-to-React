@@ -20,6 +20,17 @@ code {
 .react-multiple-carousel__arrow {
     position: absolute;
     top: 7px;
-    right: 100px !important;
+    right: 20px !important;
     z-index: 9999999;
+}
+
+.react-multiple-carousel__arrow--left {
+    right: 80px !important;
+    left: calc(100% - 120px) !important;
+}
+
+.navbar-toggler {
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
 }

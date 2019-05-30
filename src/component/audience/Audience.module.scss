@@ -1,0 +1,61 @@
+.audienceOverview {
+    text-align: left;
+    color: #2d2d2d;
+    h1 {
+        margin: 50px 0px 30px;
+        font-size: 18px;
+        font-weight: bold;
+    }
+    .fiveBox {
+        margin-bottom: 50px;
+        div {
+            padding-right: 10px;
+            .singleDiv {
+                padding: 5px 6px;
+                display: flex;
+                div {
+                    &.leftBox {
+                        flex: 1;
+                        align-items: center;
+                        justify-content: center;
+                        display: flex;
+                        i {
+                            color: #bca477;
+                            background-color: #0a2443;
+                            padding: 5px 7px;
+                            border-radius: 3px;
+                        }
+                    }
+                    &.rightBox {
+                        flex: 2;
+                        font-size: 13px;
+                        span {
+                            font-weight: bold;
+                            color: #bca477;
+                            font-size: 21px;
+                            line-height: 20px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.audiencePie {
+    text-align: left;
+    h1 {
+        color: #2d2d2d;
+        font-size: 16px;
+        font-weight: bold;
+        margin-bottom: 30px;
+    }
+}
+.audienceBar {
+    text-align: left;
+    h1 {
+        color: #2d2d2d;
+        font-size: 16px;
+        font-weight: bold;
+        margin-bottom: 30px;
+    }
+}

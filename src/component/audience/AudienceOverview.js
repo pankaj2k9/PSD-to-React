@@ -1,54 +1,66 @@
 import React from "react";
-
 import { Container, Row, Col, Button } from "reactstrap";
+import classes from "./Audience.module.scss";
 export default function AudienceOverview() {
     return (
-        <div>
+        <div className={classes.audienceOverview}>
             <h1>Audience Stats Overview</h1>
-            <Row>
+            <Row className={classes.fiveBox}>
                 <Col>
-                    <div>
-                        <i className="fa fa-facebook" />
-                    </div>
-                    <div>
-                        <span className="number">455,000,000</span>
-                        Total Social Influence
+                    <div className={classes.singleDiv}>
+                        <div className={classes.leftBox}>
+                            <i className="fa fa-facebook" />
+                        </div>
+                        <div className={classes.rightBox}>
+                            <span>100,000</span> <br />
+                            Followers
+                        </div>
                     </div>
                 </Col>
                 <Col>
-                    <div>
-                        <i className="fa fa-facebook" />
-                    </div>
-                    <div>
-                        <span className="number">455,000,000</span>
-                        Total Social Influence
-                    </div>
-                </Col>
-                <Col>
-                    <div>
-                        <i className="fa fa-facebook" />
-                    </div>
-                    <div>
-                        <span className="number">455,000,000</span>
-                        Total Social Influence
+                    <div className={classes.singleDiv}>
+                        <div className={classes.leftBox}>
+                            <i className="fa fa-instagram" />
+                        </div>
+                        <div className={classes.rightBox}>
+                            <span>100,000</span>
+                            <br />
+                            Followers
+                        </div>
                     </div>
                 </Col>
                 <Col>
-                    <div>
-                        <i className="fa fa-facebook" />
-                    </div>
-                    <div>
-                        <span className="number">455,000,000</span>
-                        Total Social Influence
+                    <div className={classes.singleDiv}>
+                        <div className={classes.leftBox}>
+                            <i className="fa fa-twitter" />
+                        </div>
+                        <div className={classes.rightBox}>
+                            <span>100,000</span> <br />
+                            Followers
+                        </div>
                     </div>
                 </Col>
                 <Col>
-                    <div>
-                        <i className="fa fa-facebook" />
+                    <div className={classes.singleDiv}>
+                        <div className={classes.leftBox}>
+                            <i className="fa fa-instagram" />
+                        </div>
+                        <div className={classes.rightBox}>
+                            <span>100,000</span>
+                            <br />
+                            Followers
+                        </div>
                     </div>
-                    <div>
-                        <span className="number">455,000,000</span>
-                        Total Social Influence
+                </Col>
+                <Col>
+                    <div className={classes.singleDiv}>
+                        <div className={classes.leftBox}>
+                            <i className="fa fa-twitter" />
+                        </div>
+                        <div className={classes.rightBox}>
+                            <span>100,000</span> <br />
+                            Followers
+                        </div>
                     </div>
                 </Col>
             </Row>

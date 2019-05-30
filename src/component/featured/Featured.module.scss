@@ -1,6 +1,38 @@
 .itemPaddding {
     padding: 20px;
 }
-.caruoselContainer {
-    padding-top: 50px;
+.featured {
+    background: #f5f4f8;
+    h3 {
+        margin: 50px 20px 0px;
+        font-size: 21px;
+        font-weight: bold;
+        text-align: left;
+        color: #2d2d2d;
+        margin-bottom: -45px;
+    }
+    .caruoselContainer {
+        padding-top: 50px;
+    }
+}
+.singleFeturedBox {
+    position: relative;
+    .singleFeturedBottomBox {
+        text-align: left;
+        position: absolute;
+        background: #fff;
+        color: #2d2d2d;
+        bottom: 0px;
+        left: 0px;
+        width: 75%;
+        padding: 10px 3px 0px;
+        h1 {
+            font-size: 18px;
+            line-height: 20px;
+            margin-bottom: 3px;
+        }
+        p {
+            font-size: 13px;
+        }
+    }
 }
