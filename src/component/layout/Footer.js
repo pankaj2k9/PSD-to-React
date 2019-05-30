@@ -1,5 +1,14 @@
 import React from "react";
+import FooterTop from "./footer/FooterTop";
+import FooterBottom from "./footer/FooterBottom";
 
-export default function Footer() {
-    return <div>Footer</div>;
-}
+const Footer = () => {
+    return (
+        <React.Fragment>
+            <FooterTop />
+            <FooterBottom />
+        </React.Fragment>
+    );
+};
+
+export default Footer;

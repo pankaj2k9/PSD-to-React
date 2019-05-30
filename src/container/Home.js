@@ -7,10 +7,6 @@ import Audience from "../component/home/Audience";
 import Fetaured from "../component/home/Fetaured";
 
 export default class Home extends Component {
-    static propTypes = {
-        prop: PropTypes
-    };
-
     render() {
         return (
             <React.Fragment>

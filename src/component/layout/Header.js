@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import classes from "./Header.module.scss";
+import logo from "./../../assets/logo.png";
 import {
     Collapse,
     Navbar,
@@ -30,14 +31,10 @@ export default class Header extends Component {
     }
     render() {
         return (
-            <div class="container">
+            <div className="container">
                 <Navbar expand="md">
                     <NavbarBrand href="/">
-                        <img
-                            className={classes.logo}
-                            src="./assets/logo.png"
-                            alt="Logo"
-                        />
+                        <img className={classes.logo} src={logo} alt="Logo" />
                     </NavbarBrand>
                     <NavbarToggler onClick={this.toggle} />
                     <Collapse isOpen={this.state.isOpen} navbar>
