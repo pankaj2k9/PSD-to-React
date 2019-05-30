@@ -14,3 +14,10 @@ code {
 .navbar {
     position: absolute;
 }
+
+.react-multiple-carousel__arrow {
+    position: absolute;
+    top: 7px;
+    right: 100px !important;
+    z-index: 9999999;
+}

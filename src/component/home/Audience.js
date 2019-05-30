@@ -9,7 +9,7 @@ export default class Audience extends Component {
         return (
             <Container>
                 <Row>
-                    <Col sm={6}>
+                    <Col sm={12}>
                         <AudienceOverview />
                     </Col>
                 </Row>

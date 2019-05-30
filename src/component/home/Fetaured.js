@@ -2,6 +2,8 @@ import React, { Component } from "react";
 import { Container, Row, Col, Button } from "reactstrap";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
+import SingleFeatured from "./../featured/SingleFeatured";
+import classes from "./../featured/Featured.module.scss";
 
 export default class Fetaured extends Component {
     responsive = {
@@ -18,36 +20,79 @@ export default class Fetaured extends Component {
             items: 1
         }
     };
+    Data = [
+        {
+            title: "Moonlight",
+            category: "Movie",
+            role: "Main Actor",
+            imageUrl: "camada-one.png"
+        },
+        {
+            title: "Moonlight1",
+            category: "Movie",
+            role: "Main Actor",
+            imageUrl: "camada-two.png"
+        },
+        {
+            title: "Moonlight2",
+            category: "Movie",
+            role: "Main Actor",
+            imageUrl: "camada-three.png"
+        },
+        {
+            title: "Moonlight3",
+            category: "Movie",
+            role: "Main Actor",
+            imageUrl: "camada-one.png"
+        },
+        {
+            title: "Moonlight4",
+            category: "Movie",
+            role: "Main Actor",
+            imageUrl: "camada-two.png"
+        },
+        {
+            title: "Moonlight5",
+            category: "Movie",
+            role: "Main Actor",
+            imageUrl: "camada-three.png"
+        }
+    ];
 
     render() {
         return (
             <Container>
                 <Row>
+                    <h1>Featured</h1>
                     <Carousel
-                        swipeable={false}
-                        draggable={false}
-                        showDots={true}
+                        swipeable={true}
+                        draggable={true}
+                        showDots={false}
                         responsive={this.responsive}
                         ssr={true} // means to render carousel on server-side.
-                        slidesToSlide={2}
+                        slidesToSlide={3}
                         infinite={true}
                         autoPlay={
-                            this.props.deviceType !== "mobile" ? true : false
+                            this.props.deviceType !== "mobile" ? false : false
                         }
                         autoPlaySpeed={1000}
                         keyBoardControl={true}
                         customTransition="all .5"
                         transitionDuration={500}
-                        containerClass="carousel-container"
+                        containerClass={classes.caruoselContainer}
                         removeArrowOnDeviceType={["tablet", "mobile"]}
                         deviceType={this.props.deviceType}
                         dotListClass="custom-dot-list-style"
-                        itemClass="carousel-item-padding-40-px"
+                        itemClass={classes.itemPaddding}
                     >
-                        <div>Item 1</div>
-                        <div>Item 2</div>
-                        <div>Item 3</div>
-                        <div>Item 4</div>
+                        {this.Data.map((singleFeature, i) => {
+                            return (
+                                <SingleFeatured
+                                    feature={singleFeature}
+                                    key={i}
+                                />
+                            );
+                        })}
                     </Carousel>
                     ;
                 </Row>
