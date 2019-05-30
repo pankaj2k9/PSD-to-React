@@ -14,32 +14,44 @@ const TopBanner = () => {
                         <h4>ATHLETE.ACTOR</h4>
                         <h1>DEANDRE JORDAN</h1>
                         <h4>
-                            PRICE RANGE: <span>$500-$1000</span>
+                            PRICE RANGE: <span> $500-$1000</span>
                         </h4>
-                        <Col sm={4}>
-                            <div className={classes.leftBox}>
-                                <i className="fa fa-facebook" />
-                            </div>
-                            <div className={classes.rightBox}>
-                                100,000 Followers
-                            </div>
-                        </Col>
-                        <Col sm={4}>
-                            <div className={classes.leftBox}>
-                                <i className="fa fa-instagram" />
-                            </div>
-                            <div className={classes.rightBox}>
-                                100,000 Followers
-                            </div>
-                        </Col>
-                        <Col sm={4}>
-                            <div className={classes.leftBox}>
-                                <i className="fa fa-twitter" />
-                            </div>
-                            <div className={classes.rightBox}>
-                                100,000 Followers
-                            </div>
-                        </Col>
+                        <Row className={classes.threeBox}>
+                            <Col sm={4}>
+                                <div className={classes.singleDiv}>
+                                    <div className={classes.leftBox}>
+                                        <i className="fa fa-facebook" />
+                                    </div>
+                                    <div className={classes.rightBox}>
+                                        <span>100,000</span> <br />
+                                        Followers
+                                    </div>
+                                </div>
+                            </Col>
+                            <Col sm={4}>
+                                <div className={classes.singleDiv}>
+                                    <div className={classes.leftBox}>
+                                        <i className="fa fa-instagram" />
+                                    </div>
+                                    <div className={classes.rightBox}>
+                                        <span>100,000</span>
+                                        <br />
+                                        Followers
+                                    </div>
+                                </div>
+                            </Col>
+                            <Col sm={4}>
+                                <div className={classes.singleDiv}>
+                                    <div className={classes.leftBox}>
+                                        <i className="fa fa-twitter" />
+                                    </div>
+                                    <div className={classes.rightBox}>
+                                        <span>100,000</span> <br />
+                                        Followers
+                                    </div>
+                                </div>
+                            </Col>
+                        </Row>
                         <p>
                             Hyland DeAndre Jordan Jr. (born July 21, 1988) is an
                             American professional basketball player for the
@@ -49,7 +61,7 @@ const TopBanner = () => {
                             slected by the Clippers in the second roud of the
                             2008 NBA draft with the 35th overall pick.
                         </p>
-                        <Col sm={12}>
+                        <Col sm={12} className={classes.awardBox}>
                             <h2> Awards </h2>
                             <ul>
                                 <li>2x chapion of Lorem Ipsum Tournament</li>

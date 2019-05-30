@@ -7,5 +7,89 @@
         margin-top: 100px;
         color: #fff;
         text-align: left;
+        padding-bottom: 50px;
+        h1 {
+            font-size: 65px;
+            line-height: 63px;
+            margin-bottom: 20px;
+        }
+        h4 {
+            font-size: 11px;
+            span {
+                font-size: 25px;
+                color: #bca477;
+                top: 4px;
+                position: relative;
+                padding-left: 10px;
+            }
+        }
+        div {
+            &.awardBox {
+                background-color: #162f4d;
+                padding: 20px;
+                margin: 30px 0px;
+                h2 {
+                    font-weight: bold;
+                    color: #fff;
+                    font-size: 15px;
+                }
+                ul {
+                    list-style: none;
+                    padding-left: 13px;
+                    li {
+                        color: #6c7c8f;
+                        font-size: 13px;
+                        &::before {
+                            content: "\2022";
+                            color: #bca477;
+                            font-weight: bold;
+                            display: inline-block;
+                            width: 1em;
+                            margin-left: -1em;
+                        }
+                    }
+                }
+            }
+            &.threeBox {
+                padding: 30px 0px;
+                div {
+                    padding-right: 10px;
+                    .singleDiv {
+                        padding: 5px 6px;
+                        background-color: #162f4d;
+                        display: flex;
+                        div {
+                            &.leftBox {
+                                flex: 1;
+                                align-items: center;
+                                justify-content: center;
+                                display: flex;
+                                i {
+                                    color: #bca477;
+                                }
+                            }
+                            &.rightBox {
+                                flex: 2;
+                                color: #6c7c8f;
+                                font-size: 13px;
+                                span {
+                                    font-weight: bold;
+                                    color: #fff;
+                                    font-size: 15px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        p {
+            color: #6c7c8f;
+            font-size: 13px;
+        }
+        button {
+            font-size: 15px;
+            background-color: #bca477 !important;
+        }
     }
 }

@@ -1,3 +1,42 @@
 .logo {
-    padding: 10px;
+    padding: 16px;
+    max-width: 135px;
+}
+
+.navBar {
+    li {
+        margin: 0px 15px;
+        a {
+            color: #b2b2af;
+            position: relative;
+            padding-left: 0px !important;
+            padding-bottom: 14px;
+            &:hover {
+                color: #fff;
+                &::after {
+                    content: "";
+                    background: #bca477;
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    height: 2px;
+                    width: 50%;
+                }
+            }
+        }
+        &.newActive {
+            a {
+                color: #fff;
+                &::after {
+                    content: "";
+                    background: #bca477;
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    height: 2px;
+                    width: 50%;
+                }
+            }
+        }
+    }
 }

@@ -9,7 +9,7 @@ const FooterBottom = () => {
                 <Row>
                     <Col sm={3}>
                         <img
-                            className="img-fluid"
+                            className={`${classes.footerLogo} img-fluid`}
                             src={logo}
                             alt="Footer Logo"
                         />
@@ -20,8 +20,8 @@ const FooterBottom = () => {
                             "About Me" page.
                         </h1>
                     </Col>
-                    <Col sm={3}>
-                        <Button color="secondary" size="lg" active>
+                    <Col sm={3} className={classes.footerBtnBox}>
+                        <Button size="lg" active>
                             Join Fimpack
                         </Button>
                     </Col>

@@ -38,8 +38,8 @@ export default class Header extends Component {
                     </NavbarBrand>
                     <NavbarToggler onClick={this.toggle} />
                     <Collapse isOpen={this.state.isOpen} navbar>
-                        <Nav className="ml-auto" navbar>
-                            <NavItem>
+                        <Nav className={`${classes.navBar} ml-auto`} navbar>
+                            <NavItem className={classes.newActive}>
                                 <NavLink href="/">Overview</NavLink>
                             </NavItem>
                             <NavItem>
