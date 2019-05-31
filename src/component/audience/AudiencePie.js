@@ -19,7 +19,6 @@ const data = [
 const COLORS = ["#0088FE", "#00C49F", "#FFBB28", "#FF8042"];
 const style = {
     top: 0,
-    right: 0,
     lineHeight: "24px"
 };
 
@@ -30,8 +29,8 @@ export default class AudiencePie extends PureComponent {
                 <PieChart onMouseEnter={this.onPieEnter}>
                     <Pie
                         data={data}
-                        cx={120}
-                        cy={200}
+                        cx={80}
+                        cy={80}
                         innerRadius={60}
                         outerRadius={80}
                         fill="#8884d8"
