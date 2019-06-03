@@ -2,6 +2,7 @@ import React from "react";
 import classes from "./TopBanner.module.scss";
 import { Container, Row, Col, Button } from "reactstrap";
 import camada from "./../../assets/camada.png";
+
 const TopBanner = () => {
     return (
         <div className={classes.banner}>
